@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #f4f4f4
+    ;
+    background-image: url(pattern-squiggly-line-top.svg),
+                      url(background-desktop.png),
+                      url(pattern-squiggly-line-bottom-desktop.svg),
+                      url(pattern-lines.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: top, center, bottom, center;
+    background-size: auto, cover, auto, cover;
+    background-attachment: fixed, fixed, fixed, fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.logo-img {
+    width: 150px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    
+}
+
+.top-title {
+    font-size: 35px;
+    max-width: 700px;
+    margin: 20px auto 10px;
+}
+
+.top-title p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.top-paragraph {
+   color: #cfcfcf;
+   margin-bottom: 40px;
+}
+
+
+/* Form container */
+.form-container {
+    width: 100%;
+    max-width: 420px;
+    margin: auto;
+}
+
+.form-container h5 {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #dddddd;
+    font-weight: normal;
+}
+
+/* Upload box */
+.upload-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px dashed #e6e5e8;
+    border-radius: 10px;
+    padding: 35px 20px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.06);
+}
+.upload-box:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+
+
+.upload-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-content p {
+    margin: 10px 0 0;
+    color: #cccccc;
+}
+
+.upload-icon {
+    font-size: 30px;
+}
+
+.upload-note {
+    font-size: 12px;
+    margin: 10px 0 25px;
+    color: #aaaaaa;
+}
+
+/* Input fields */
+.input-field {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    background: rgba(255,255,255,0.12);
+    color: white;
+}
+
+.input-field::placeholder {
+    color: #cccccc;
+}
+
+/* Submit button */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: #ff8463;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+
+
+.container2{
+    display: none;
+    margin-top: 20px;
+    max-width: 760px;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#name-avatar {
+    color: #ff8463;
+    color: linear-gradient(
+    to right,
+    #ff5959 0%,
+    #ff5959 50%,
+    #b6c5e7 50%,
+    #cad1e0 100%)
+}
+
+.container2 p a{
+    color: #ff795a;
+    text-decoration: none;
+    max-width: fit-content;
+}
+
+.ticket-svg{
+    background: url(pattern-ticket.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 10px;  
+    border-radius: 16px;
+    width: 500px;
+    height: 300px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+}
+
+.ticket-svg img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+
+.ticket-details{
+    margin-top: 20px 0 0 20px;
+    font-size: 16px;
+    color: #dddddd;
+    max-width: 600px;
+    text-align: center;
+}
+
+.ticket-title{
+    width: 150px;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px auto 10px 20px;
+}
+
+
+.ticket-date{
+    font-size: 14px;
+    color: #cccccc;
+    font-weight: lighter;
+    margin-bottom: 15px;
+    letter-spacing: 0.1px;
+}
+
+.profile-info{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+
+.avatar-img{
+    width: 100px;
+    height: 100px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+}
+
+.avatar-img img{
+    border-radius: 10px;
+}
+
+.profile-username{
+    font-size: 16px;
+    color: #bbbbbb;
+}
+
+.profile-name{
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.ticket-no{
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #cccccc;
+    translate: 138px -10px;
+    transform: rotate(90deg);
+}

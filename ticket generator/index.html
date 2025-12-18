@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Ticket Generator</title>
+</head>
+<body>
+
+
+    <div class="logo-img">
+             <img src="logo-full.svg" alt="company logo">
+    </div>
+
+    <h1 class="top-title">Your Journey to Coding Conf <br> <p>2025 Starts Here!</p></h1>
+    <p class="top-paragraph">Secure your spot at your next year's biggest coding conference.</p>
+
+    
+    <div class="form-container">
+        <h5>Upload Avatar</h5>
+        <label class="upload-box">
+            <input type="file" id="upload-input" accept="image/png, image/jpeg" hidden>
+            <div class="upload-content">
+                <span class="upload-icon">
+                    <img src="icon-upload.svg" alt="Upload Icon">
+                </span>
+                <p>Drag and drop or click to upload</p>
+            </div>
+        </label>
+
+        <p class="upload-note"> <img src="icon-info.svg" alt="Info Icon">Upload your photo (JPG or PNG, max size: 500KB).</p>
+
+        <form id="my-form">
+            <input type="text" placeholder="Full Name" class="input-field" id="name">
+            <input type="email" placeholder="example@email.com" class="input-field" id="email">
+            <input type="text" placeholder="@yourusername" class="input-field" id="username">
+
+            <button class="submit-btn">Generate My Ticket</button>
+        </form>
+
+    </div>
+
+    <div class="container2">
+
+        <h1 class="sub-title">Congrats, <strong id="name-avatar">Jonathan Kristof!</strong> <br>Your Ticket is Ready!
+        </h1>
+
+        <p>We've emailed your ticket to <a href="#" id="ticket-email">jonatan@email.com</a>  and will send updates in the run up to the event.</p>
+
+        <div class="ticket-svg">
+                <div class="ticket-details">
+                    <div class="ticket-title">
+                        <img src="logo-full.svg" alt="Logo Icon">
+                        <p class="ticket-date">Jan 31, 2025   /   Austin, TX</p>
+                    </div>   
+
+                    <div class="profile-info">
+
+                        <div class="avatar-img">
+                            <img src="image-avatar.jpg" alt="Profile Image">
+                        </div>
+
+                        <div class="profile-username">
+                            <div class="profile-name" id="profile-name">Jonatan Kristof</div>
+                            <div class="profile-username" id="profile-username">@jonatankristof0101</div>
+                        </div>
+
+                        <div class="ticket-no">#01609</div>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
